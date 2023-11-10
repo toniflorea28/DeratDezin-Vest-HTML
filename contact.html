@@ -154,10 +154,6 @@
 
 						</nav><!-- #primary-menu end -->
 
-						<form class="top-search-form" action="search" method="get">
-							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
-						</form>
-
 					</div>
 				</div>
 			</div>
@@ -197,66 +193,10 @@
 
 								<div class="form-result"></div>
 
-								<form class="mb-0" id="contact-form" >
-
-									<div class="form-process">
-										<div class="css3-spinner">
-											<div class="css3-spinner-scaler"></div>
-										</div>
-									</div>
-
-									<div class="row">
-										<div class="col-md-4 form-group">
-											<label for="template-contactform-name">Nume <small>*</small></label>
-											<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required">
-										</div>
-
-										<div class="col-md-4 form-group">
-											<label for="template-contactform-email">Email <small>*</small></label>
-											<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email form-control">
-										</div>
-
-										<div class="col-md-4 form-group">
-											<label for="template-contactform-phone">Telefon</label>
-											<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control">
-										</div>
-
-										<div class="w-100"></div>
-
-										<div class="col-md-8 form-group">
-											<label for="template-contactform-subject">Subiect <small>*</small></label>
-											<input type="text" id="template-contactform-subject" name="subject" value="" class="required form-control">
-										</div>
-
-										<div class="col-md-4 form-group">
-											<label for="template-contactform-service">Servicii</label>
-											<select id="template-contactform-service" name="template-contactform-service" class="form-select">
-												<option value="">-- Selectati un serviciu --</option>
-												<option value="dezinfectie">Dezinfectie generala</option>
-												<option value="dezinsectie">Dezinsectie</option>
-												<option value="deratizare">Deratizare</option>
-												<option value="altele">Altele / Servicii multiple</option>
-											</select>
-										</div>
-
-										<div class="w-100"></div>
-
-										<div class="col-12 form-group">
-											<label for="template-contactform-message">Mesaj <small>*</small></label>
-											<textarea class="required form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
-										</div>
-
-										<div class="col-12 form-group d-none">
-											<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
-										</div>
-
-										<div class="col-12 form-group">
-											<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Trimite mesajul</button>
-										</div>
-									</div>
-
-									<input type="hidden" name="prefix" value="template-contactform-">
-
+								<form id="javascript_form">
+									<input type="text" name="subject" placeholder="Subiect" class="input-contact" /> <br> <br>
+									<textarea name="text" placeholder="Mesaj" class="input-contact"></textarea> <br> <br>
+									<input type="submit" id="js_send" value="Trimite" class="input-contact"/> <br>
 								</form>
 							</div>
 
@@ -376,6 +316,70 @@
 	<!-- JavaScripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+	<script>
+
+		//update this with your js_form selector
+		var form_id_js = "javascript_form";
+	
+		var data_js = {
+			"access_token": "z8j6g7569e8og340haeillg7"
+		};
+	
+		function js_onSuccess() {
+			// remove this to avoid redirect
+			window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+		}
+	
+		function js_onError(error) {
+			// remove this to avoid redirect
+			window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+		}
+	
+		var sendButton = document.getElementById("js_send");
+	
+		function js_send() {
+			sendButton.value='Sending…';
+			sendButton.disabled=true;
+			var request = new XMLHttpRequest();
+			request.onreadystatechange = function() {
+				if (request.readyState == 4 && request.status == 200) {
+					js_onSuccess();
+				} else
+				if(request.readyState == 4) {
+					js_onError(request.response);
+				}
+			};
+	
+			var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+			var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+			data_js['subject'] = subject;
+			data_js['text'] = message;
+			var params = toParams(data_js);
+	
+			request.open("POST", "https://postmail.invotes.com/send", true);
+			request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	
+			request.send(params);
+	
+			return false;
+		}
+	
+		sendButton.onclick = js_send;
+	
+		function toParams(data_js) {
+			var form_data = [];
+			for ( var key in data_js ) {
+				form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+			}
+	
+			return form_data.join("&");
+		}
+	
+		var js_form = document.getElementById(form_id_js);
+		js_form.addEventListener("submit", function (e) {
+			e.preventDefault();
+		});
+	</script>
 
 </body>
 </html>

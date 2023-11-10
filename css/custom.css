@@ -5,6 +5,10 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+.input-contact {
+	width: 100%;
+	padding: 12px;
+}
 
 .file-button {
 	display: inline-block;
