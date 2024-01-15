@@ -24,46 +24,46 @@
 	<!-- Document Title
 	============================================= -->
 	<title>Firma Deratizare Timisoara - Servicii DDD Timisoara</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ97PYVG7T">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SZ97PYVG7T');
-</script>
-<script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ97PYVG7T">
+	</script>
+	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-  
+
 	gtag('config', 'G-SZ97PYVG7T');
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER258MMD3"></script>
-  <script>
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'G-SZ97PYVG7T');
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER258MMD3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'G-0ER258MMD3', { 'anonymize_ip': true });
+	</script>
+	<meta name="google-site-verification" content="dOHucl-GUt25DrasYvbHoocIhcGfoRSfw9_KIy7SBV0" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5Y1H9XGPP"></script>
+	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-  
-	gtag('config', 'G-0ER258MMD3', { 'anonymize_ip': true });
-  </script>
-  <meta name="google-site-verification" content="dOHucl-GUt25DrasYvbHoocIhcGfoRSfw9_KIy7SBV0" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5Y1H9XGPP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-R5Y1H9XGPP');
-</script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=40757527639" class="wp-float" target="_blank">
-	<i class="fa fa-whatsapp wp-float-mg"></i>
-	</a>
-</head>
+	gtag('config', 'G-R5Y1H9XGPP');
+	</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<a href="https://api.whatsapp.com/send?phone=40757527639" class="wp-float" target="_blank">
+		<i class="fa fa-whatsapp wp-float-mg"></i>
+		</a>
+	</head>
 
 <body class="stretched">
 
@@ -96,40 +96,16 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu">
 
-							<ul class="menu-container">
-								<li class="menu-item">
-									<a class="menu-link" href="index"><div>Acasa</div></a>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="#"><div>Servicii</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item">
-											<a class="menu-link" href="dezinsectie"><div><i class="bi-hypnotize"></i>Dezinsecție</div></a>
-										</li>
-										<li class="menu-item">
-											<a class="menu-link" href="deratizare"><div><i class="bi-hypnotize"></i>Deratizare</div></a>
-										</li>
-										<li class="menu-item">
-											<a class="menu-link" href="dezinfectie"><div><i class="bi-hypnotize"></i>Dezinfecție generala</div></a>
-										</li>
-									</ul>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="certificari"><div>Certificări</div></a>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="contact"><div>Contact</div></a>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="faqs"><div>FAQ</div></a>
-								</li>
-							</ul>
+						<div id="navbar"></div>
 
-						</nav><!-- #primary-menu end -->
-
-
+						<script>
+							fetch('./components/navbar.html')
+							  .then(response => response.text())
+							  .then(data => {
+								document.getElementById('navbar').innerHTML = data;
+							  });
+						</script>
 
 					</div>
 				</div>

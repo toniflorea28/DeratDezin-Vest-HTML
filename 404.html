@@ -99,40 +99,15 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu">
+						<div id="navbar"></div>
 
-							<ul class="menu-container">
-								<li class="menu-item">
-									<a class="menu-link" href="index.html"><div>Acasa</div></a>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="#"><div>Servicii</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item">
-											<a class="menu-link" href="dezinsectie.html"><div><i class="bi-hypnotize"></i>Dezinsecție</div></a>
-										</li>
-										<li class="menu-item">
-											<a class="menu-link" href="deratizare.html"><div><i class="bi-hypnotize"></i>Deratizare</div></a>
-										</li>
-										<li class="menu-item">
-											<a class="menu-link" href="dezinfectie.html"><div><i class="bi-hypnotize"></i>Dezinfecție generala</div></a>
-										</li>
-									</ul>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="certificari.html"><div>Certificări</div></a>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="contact.html"><div>Contact</div></a>
-								</li>
-								<li class="menu-item">
-									<a class="menu-link" href="faqs.html"><div>FAQ</div></a>
-								</li>
-							</ul>
-
-						</nav><!-- #primary-menu end -->
-
-
+						<script>
+							fetch('./components/navbar.html')
+							  .then(response => response.text())
+							  .then(data => {
+								document.getElementById('navbar').innerHTML = data;
+							  });
+						</script>
 
 					</div>
 				</div>
