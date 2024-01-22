@@ -31,3 +31,8 @@
 	border-left: 1px solid white;
 	padding-left: 0.3rem;
 }
+.toggle-content-grid {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	margin-bottom: 20px;
+}
