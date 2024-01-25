@@ -98,15 +98,41 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<div id="navbar"></div>
+						<nav class="primary-menu">
 
-						<script>
-							fetch('./components/navbar.html')
-							  .then(response => response.text())
-							  .then(data => {
-								document.getElementById('navbar').innerHTML = data;
-							  });
-						</script>
+							<ul class="menu-container">
+								<li class="menu-item">
+									<a class="menu-link" href="index"><div>Acasa</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Servicii</div></a>
+									<ul class="sub-menu-container">
+										<li class="menu-item">
+											<a class="menu-link" href="https://deratdezin-vest.ro/dezinsectie"><div><i class="bi-hypnotize"></i>Dezinsecție</div></a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="https://deratdezin-vest.ro/deratizare"><div><i class="bi-hypnotize"></i>Deratizare</div></a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="https://deratdezin-vest.ro/dezinfectie"><div><i class="bi-hypnotize"></i>Dezinfecție generala</div></a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="https://deratdezin-vest.ro/certificari"><div>Certificări</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="https://deratdezin-vest.ro/daunatori"><div>Dăunători</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="https://deratdezin-vest.ro/contact"><div>Contact</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="https://deratdezin-vest.ro/faqs"><div>FAQ</div></a>
+								</li>
+							</ul>
+						
+						</nav><!-- #primary-menu end -->
 
 
 					</div>
@@ -234,7 +260,7 @@
 									<div class="widget widget_links">
 										<h4>Link-uri Utile</h4>
 										<ul>
-											<li><a href="certificates">Certificări</a></li>
+											<li><a href="https://deratdezin-vest.ro/certificari">Certificări</a></li>
 											<li><a href="contact">Contact</a></li>
 											<li><a href="faqs">FAQ</a></li>
 										</ul>
