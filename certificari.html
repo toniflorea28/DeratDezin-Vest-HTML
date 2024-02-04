@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ro-RO">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<meta data-vue-meta="1" name="description" content="Servicii profesionale de dezinsectie si deratizare Timisoara, DeratDezin Vest.">
-	<meta data-vue-meta="1" name="description" content="Ai nevoie de o firmă deratizare, dezinsecție și dezinfecție în Timișoara, Lugoj, Recaș sau alte orase din Timiș? Contactează-ne și te scăpam rapid de daunători!.">
+	<meta data-vue-meta="1" name="description"
+		content="Servicii profesionale de dezinsectie si deratizare Timisoara, DeratDezin Vest.">
+	<meta data-vue-meta="1" name="description"
+		content="Ai nevoie de o firmă deratizare, dezinsecție și dezinfecție în Timișoara, Lugoj, Recaș sau alte orase din Timiș? Contactează-ne și te scăpam rapid de daunători!.">
 	<!-- Font Imports -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap"
+		rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 	<!-- Core Style -->
@@ -29,42 +34,174 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ97PYVG7T">
 	</script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-SZ97PYVG7T');
+		gtag('config', 'G-SZ97PYVG7T');
 	</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "Rubik", sans-serif;
+			line-height: 1;
+			color: #555;
+			/* This is our main text color*/
+			font-weight: 400;
+		}
+
+		.section-hero {
+			background-color: #fdf2e9;
+			padding: 8.4rem 0 9.6rem 0;
+		}
+
+		#content {
+			font-size: 1.2rem;
+		}
+
+		.hero {
+			/* We'll not use px to define the length and will use rem. */
+			/* max-width: 1300px; */
+			max-width: 130rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding: 0 3.2rem;
+			margin: 0 auto;
+			align-items: center;
+			gap: 0 9.6rem;
+		}
+
+		.heading-primary {
+			font-size: 5.2rem;
+			color: #333;
+			font-weight: 700;
+			letter-spacing: -0.5px;
+			line-height: 1.05;
+			margin-bottom: 3.6rem;
+			font-size: 3rem !important;
+		}
+
+		.hero-description {
+			font-size: 2rem;
+			line-height: 1.5;
+			margin-bottom: 4.8rem;
+		}
+
+		.hero-img-box {
+			grid-column: 2/3;
+			grid-row: 1 / 3;
+		}
+
+		.hero-img {
+			width: 100%;
+		}
+
+		.btn:link,
+		.btn:visited {
+			display: inline-block;
+			font-size: 1rem;
+			font-weight: 600;
+			font-family: inherit;
+			border: none;
+			cursor: pointer;
+			border-radius: 9px;
+			/* margin-top: 4.8rem; */
+			padding: 1.6rem 3.2rem;
+			text-decoration: none;
+
+			transition: background-color 500ms;
+		}
+
+		.btn--fill:link,
+		.btn--fill:visited {
+			background-color: #a31515;
+			color: #fff;
+		}
+
+		.btn--outline:link,
+		.btn--outline:visited {
+			color: #555;
+			background-color: #fff;
+		}
+
+		.btn--fill:hover,
+		.btn--fill:active {
+			background-color: #cf711f;
+			text-decoration: underline;
+		}
+
+		.btn--outline:hover,
+		.btn--outline:active {
+			background-color: #fdf2e9;
+			/* Now we'll not use border as in border the outlines are on the outside. Instead we'll use the outline or box-shadow property */
+			box-shadow: inset 0px 0px 0px 3px #fff;
+			text-decoration: underline;
+			/* outline: #fff solid 3px; */
+		}
+
+		/* We'll create a utility class that can be used for any element by simply adding a class. */
+		.margin-right-btn {
+			margin-right: 2.4rem;
+		}
+
+		.delivered-meals {
+			display: flex;
+			align-items: center;
+			gap: 3.2rem;
+		}
+
+		.delivered-imgs img {
+			width: 4.8rem;
+			height: 4.8rem;
+			border-radius: 50%;
+			margin-right: -1.6rem;
+			outline: #fdf2e9 solid 3px;
+		}
+
+		.delivered-text {
+			font-size: 1.8rem;
+			font-weight: 600;
+		}
+
+		.delivered-text span {
+			color: #cf711f;
+		}
+	</style>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-	
+
 		gtag('config', 'G-SZ97PYVG7T');
 	</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER258MMD3"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-	
+
 		gtag('config', 'G-0ER258MMD3', { 'anonymize_ip': true });
 	</script>
 	<meta name="google-site-verification" content="dOHucl-GUt25DrasYvbHoocIhcGfoRSfw9_KIy7SBV0" />
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5Y1H9XGPP"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-R5Y1H9XGPP');
+		gtag('config', 'G-R5Y1H9XGPP');
 	</script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<a href="https://api.whatsapp.com/send?phone=40757527639" class="wp-float" target="_blank">
 		<i class="fa fa-whatsapp wp-float-mg"></i>
-		</a>
-	</head>
+	</a>
+</head>
 
 <body class="stretched">
 
@@ -102,36 +239,54 @@
 
 							<ul class="menu-container">
 								<li class="menu-item">
-									<a class="menu-link" href="index"><div>Acasa</div></a>
+									<a class="menu-link" href="index">
+										<div>Acasa</div>
+									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="#"><div>Servicii</div></a>
+									<a class="menu-link" href="#">
+										<div>Servicii</div>
+									</a>
 									<ul class="sub-menu-container">
 										<li class="menu-item">
-											<a class="menu-link" href="https://deratdezin-vest.ro/dezinsectie"><div><i class="bi-hypnotize"></i>Dezinsecție</div></a>
+											<a class="menu-link" href="https://deratdezin-vest.ro/dezinsectie">
+												<div><i class="bi-hypnotize"></i>Dezinsecție</div>
+											</a>
 										</li>
 										<li class="menu-item">
-											<a class="menu-link" href="https://deratdezin-vest.ro/deratizare"><div><i class="bi-hypnotize"></i>Deratizare</div></a>
+											<a class="menu-link" href="https://deratdezin-vest.ro/deratizare">
+												<div><i class="bi-hypnotize"></i>Deratizare</div>
+											</a>
 										</li>
 										<li class="menu-item">
-											<a class="menu-link" href="https://deratdezin-vest.ro/dezinfectie"><div><i class="bi-hypnotize"></i>Dezinfecție generala</div></a>
+											<a class="menu-link" href="https://deratdezin-vest.ro/dezinfectie">
+												<div><i class="bi-hypnotize"></i>Dezinfecție generala</div>
+											</a>
 										</li>
 									</ul>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="https://deratdezin-vest.ro/certificari"><div>Certificări</div></a>
+									<a class="menu-link" href="https://deratdezin-vest.ro/certificari">
+										<div>Certificări</div>
+									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="https://deratdezin-vest.ro/daunatori"><div>Dăunători</div></a>
+									<a class="menu-link" href="https://deratdezin-vest.ro/daunatori">
+										<div>Dăunători</div>
+									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="https://deratdezin-vest.ro/contact"><div>Contact</div></a>
+									<a class="menu-link" href="https://deratdezin-vest.ro/contact">
+										<div>Contact</div>
+									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="https://deratdezin-vest.ro/faqs"><div>FAQ</div></a>
+									<a class="menu-link" href="https://deratdezin-vest.ro/faqs">
+										<div>FAQ</div>
+									</a>
 								</li>
 							</ul>
-						
+
 						</nav><!-- #primary-menu end -->
 
 					</div>
@@ -139,47 +294,64 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 			<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ97PYVG7T">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ97PYVG7T">
+			</script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag() { dataLayer.push(arguments); }
+				gtag('js', new Date());
 
-  gtag('config', 'G-SZ97PYVG7T');
-</script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-  
-	gtag('config', 'G-SZ97PYVG7T');
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER258MMD3"></script>
-  <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-  
-	gtag('config', 'G-0ER258MMD3', { 'anonymize_ip': true });
-  </script>
-  <meta name="google-site-verification" content="dOHucl-GUt25DrasYvbHoocIhcGfoRSfw9_KIy7SBV0" />
+				gtag('config', 'G-SZ97PYVG7T');
+			</script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag() { dataLayer.push(arguments); }
+				gtag('js', new Date());
+
+				gtag('config', 'G-SZ97PYVG7T');
+			</script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER258MMD3"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag() { dataLayer.push(arguments); }
+				gtag('js', new Date());
+
+				gtag('config', 'G-0ER258MMD3', { 'anonymize_ip': true });
+			</script>
+			<meta name="google-site-verification" content="dOHucl-GUt25DrasYvbHoocIhcGfoRSfw9_KIy7SBV0" />
 		</header><!-- #header end -->
+		<section class="section-hero">
+			<!-- 1.  Now we need to make our hero section display grid and need to center the content in the page.
+		  
+				 2. To acheive that we need to create a div container inside of our section that contains all the text and img -->
 
-		<!-- Page Title
-		============================================= -->
-		<section class="page-title bg-transparent">
-			<div class="container">
-				<div class="page-title-row">
+			<div class="hero">
+				<div class="hero-text-box">
+					<h1 class="heading-primary">
+						Certificările noastre
+					</h1>
+					<p class="hero-description">
+						Asiguram cea mai inalta calitate a serviciilor noastre de deratizare, dezinsectie si
+						dezinfectie, prin sisteme de varf din domeniu si certificari internationale.
+					</p>
+					<a href="https://deratdezin-vest.ro/contact" class="btn btn--fill margin-right-btn">Contacteaza-ne &rarr;
+					</a>
+					<a href="https://deratdezin-vest.ro/faqs" class="btn btn--outline margin-right-btn">Afla mai multe &darr;
+					</a>
+				</div>
+				<div class="hero-img-box">
+					<img src="https://cdn-icons-png.flaticon.com/512/3330/3330423.png"
+						alt="Certificate"
+						class="hero-img" />
+				</div>
+				<div class="delivered-meals">
 
-					<div class="page-title-content">
-						<h1>Certificările noastre</h1>
-					</div>
-
-					
+					<p class="delivered-text mt-5">
+						Afla mai multe despre <span>certificările noastre</span> și cum acestea ne ajută să oferim cele mai bune servicii clienților noștri.
+					</p>
 				</div>
 			</div>
-		</section><!-- .page-title end -->
+		</section>
 
 		<!-- Content
 		============================================= -->
@@ -188,41 +360,71 @@
 				<div class="container">
 					<div class="row col-mb-50">
 						<div class="col-12">
-							La DeratDezin Vest&reg;, ne mândrim cu angajamentul nostru constant către excelență, atât în calitatea serviciilor pe care le oferim, cât și în responsabilitatea noastră față de mediu și siguranța angajaților noștri. Pentru a asigura cea mai înaltă calitate a serviciilor noastre de Deratizare, Dezinsecție și Dezinfecție, am implementat și menținem sisteme de management de vârf în domeniu.
+							La DeratDezin Vest&reg;, ne mândrim cu angajamentul nostru constant către excelență, atât în
+							calitatea serviciilor pe care le oferim, cât și în responsabilitatea noastră față de mediu
+							și siguranța angajaților noștri. Pentru a asigura cea mai înaltă calitate a serviciilor
+							noastre de Deratizare, Dezinsecție și Dezinfecție, am implementat și menținem sisteme de
+							management de vârf în domeniu.
 						</div>
 
 						<div class="col-md-4">
 							<h5>SR EN ISO 9001:2015 - Managementul Calității</h5>
-							Această certificare confirmă că sistemul nostru de management al calității respectă standardele internaționale. Nu ne concentrăm doar pe calitatea produselor și echipamentelor pe care le folosim, ci și pe calitatea experienței clienților noștri, pentru care sunt dispuși să plătească.
-							<div class="file-button-container"><a href="certifications/iso_9001.pdf" download="Certificat ISO 9001" class="file-button">Certificat ISO 9001 <i class="file-button-icon uil uil-file-download-alt"></i></a></div>
+							Această certificare confirmă că sistemul nostru de management al calității respectă
+							standardele internaționale. Nu ne concentrăm doar pe calitatea produselor și echipamentelor
+							pe care le folosim, ci și pe calitatea experienței clienților noștri, pentru care sunt
+							dispuși să plătească.
+							<div class="file-button-container"><a href="certifications/iso_9001.pdf"
+									download="Certificat ISO 9001" class="file-button">Certificat ISO 9001 <i
+										class="file-button-icon uil uil-file-download-alt"></i></a></div>
 						</div>
 
 						<div class="col-md-4">
 							<h5>SR EN ISO 14001:2015 - Managementul Mediului</h5>
-							Această certificare atestă angajamentul nostru de a opera într-un mod ecologic responsabil. Știm că protejarea mediului nu este doar o responsabilitate socială, ci și o bună practică de afaceri.
-							<div class="file-button-container"><a href="certifications/iso_14001.pdf" download="Certificat ISO 14001" class="file-button">Certificat ISO 14001 <i class="file-button-icon uil uil-file-download-alt"></i></a></div>
+							Această certificare atestă angajamentul nostru de a opera într-un mod ecologic responsabil.
+							Știm că protejarea mediului nu este doar o responsabilitate socială, ci și o bună practică
+							de afaceri.
+							<div class="file-button-container"><a href="certifications/iso_14001.pdf"
+									download="Certificat ISO 14001" class="file-button">Certificat ISO 14001 <i
+										class="file-button-icon uil uil-file-download-alt"></i></a></div>
 						</div>
 						<div class="col-md-4">
 							<h5>SR ISO 45001:2018 - Managementul Sănătății și Securității Ocupaționale</h5>
-							Această certificare ne asigură că menținem cele mai înalte standarde de sănătate și siguranță la locul de muncă. Siguranța și bunăstarea echipei noastre sunt de cea mai mare importanță pentru noi.						
-							<div class="file-button-container"><a href="certifications/iso_45001.pdf" download="Certificat ISO 45001" class="file-button">Certificat ISO 45001 <i class="file-button-icon uil uil-file-download-alt"></i></a></div>
+							Această certificare ne asigură că menținem cele mai înalte standarde de sănătate și
+							siguranță la locul de muncă. Siguranța și bunăstarea echipei noastre sunt de cea mai mare
+							importanță pentru noi.
+							<div class="file-button-container"><a href="certifications/iso_45001.pdf"
+									download="Certificat ISO 45001" class="file-button">Certificat ISO 45001 <i
+										class="file-button-icon uil uil-file-download-alt"></i></a></div>
 						</div>
 						<div class="col-md-6">
 							<h5>Certificare DSP</h5>
-							Acestă certificat validează calitatea și eficacitatea serviciilor noastre, conform cerințelor Direcției de Sănătate Publică.
-							<div class="file-button-container"><a href="certifications/dsp_certificare.pdf" download="Certificat DSP" class="file-button">Certificat DSP <i class="file-button-icon uil uil-file-download-alt"></i></a></div>
+							Acestă certificat validează calitatea și eficacitatea serviciilor noastre, conform
+							cerințelor Direcției de Sănătate Publică.
+							<div class="file-button-container"><a href="certifications/dsp_certificare.pdf"
+									download="Certificat DSP" class="file-button">Certificat DSP <i
+										class="file-button-icon uil uil-file-download-alt"></i></a></div>
 						</div>
 						<div class="col-md-6">
 							<h5>Certificare OSIM</h5>
-							Certificarea noastră OSIM garantează că toate metodele și tehnologiile pe care le folosim sunt nu numai eficiente, dar și inovatoare, permițându-ne să rămânem lideri în industria de deratizare.
-							<div class="file-button-container"><a href="certifications/osim.pdf" download="Certificat OSIM" class="file-button">Certificat OSIM <i class="file-button-icon uil uil-file-download-alt"></i></a></div>
+							Certificarea noastră OSIM garantează că toate metodele și tehnologiile pe care le folosim
+							sunt nu numai eficiente, dar și inovatoare, permițându-ne să rămânem lideri în industria de
+							deratizare.
+							<div class="file-button-container"><a href="certifications/osim.pdf"
+									download="Certificat OSIM" class="file-button">Certificat OSIM <i
+										class="file-button-icon uil uil-file-download-alt"></i></a></div>
 						</div>
 						<div class="col-md-12">
 							<h5>DSV</h5>
-							Suntem mândri să fim o entitate certificată DSV, asigurându-ne că serviciile noastre sunt nu numai eficiente, dar și în concordanță cu reglementările locale și naționale.						
-							<div class="file-button-container"><a href="certifications/dsv_sacalaz.pdf" download="Certificat DSV"  class="file-button">Certificat DSV <i class="file-button-icon uil uil-file-download-alt"></i></a></div>
+							Suntem mândri să fim o entitate certificată DSV, asigurându-ne că serviciile noastre sunt nu
+							numai eficiente, dar și în concordanță cu reglementările locale și naționale.
+							<div class="file-button-container"><a href="certifications/dsv_sacalaz.pdf"
+									download="Certificat DSV" class="file-button">Certificat DSV <i
+										class="file-button-icon uil uil-file-download-alt"></i></a></div>
 						</div>
-					<div class="col-md-12">În totalitate, aceste certificări nu sunt doar o listă de realizări, <b>ci un angajament față de clienții, angajații și partenerii noștri de a oferi servicii de cea mai bună calitate, într-un mod responsabil și etic.</b></div>
+						<div class="col-md-12">În totalitate, aceste certificări nu sunt doar o listă de realizări,
+							<b>ci un angajament față de clienții, angajații și partenerii noștri de a oferi servicii de
+								cea mai bună calitate, într-un mod responsabil și etic.</b>
+						</div>
 
 					</div>
 				</div>
@@ -233,32 +435,35 @@
 		============================================= -->
 		<footer id="footer" class="bg-white">
 			<div class="container">
-		
+
 				<!-- Widget-uri în Footer -->
 				<div class="footer-widgets-wrap">
-		
+
 					<div class="row col-mb-50">
 						<div class="col-lg-8">
-		
+
 							<div class="row col-mb-50">
 								<div class="col-md-4">
-		
+
 									<div class="widget">
 										<img src="images/logo-square.jpg" alt="Logo" class="footer-logo">
-										
+
 										<!-- <abbr title="Adresă de Email"><strong>Email:</strong></abbr> contact@deratizare-exemplu.ro -->
 									</div>
 								</div>
 
 								<div class="col-md-4">
-									<p>Ne angajăm să oferim servicii de <strong>dezinsectie, deratizare si dezinfectie</strong> <strong>sigure</strong>, <strong>eficiente</strong> și <strong>de încredere</strong>.</p>
-										<address>
-											<strong>Sediul central:</strong><br>
-											Str. Constructorilor nr.4, <br>Săcălaz, Jud.Timis
-										</address>
-										<abbr title="Număr de telefon"><strong>Telefon:</strong></abbr> +40 757 527 639<br>
+									<p>Ne angajăm să oferim servicii de <strong>dezinsectie, deratizare si
+											dezinfectie</strong> <strong>sigure</strong>, <strong>eficiente</strong> și
+										<strong>de încredere</strong>.
+									</p>
+									<address>
+										<strong>Sediul central:</strong><br>
+										Str. Constructorilor nr.4, <br>Săcălaz, Jud.Timis
+									</address>
+									<abbr title="Număr de telefon"><strong>Telefon:</strong></abbr> +40 757 527 639<br>
 								</div>
-								
+
 								<div class="col-md-4">
 									<div class="widget widget_links">
 										<h4>Link-uri Utile</h4>
@@ -269,28 +474,29 @@
 										</ul>
 									</div>
 								</div>
-		
-								
-		
+
+
+
 							</div>
-		
+
 						</div>
-		
-						
-		
+
+
+
 					</div>
-		
+
 				</div><!-- .footer-widgets-wrap end -->
-		
+
 			</div>
-		
+
 			<!-- Drepturi de Autor -->
 			<div id="copyrights">
 				<div class="container">
 					<div class="row col-mb-30">
 						<div class="col-md-6 text-center text-md-start">
 							Drepturi de Autor &copy; 2023. Toate drepturile rezervate - DeratDezin Vest SRL.<br>
-							<div class="copyright-links"><a href="#">Termeni și Condiții</a> / <a href="#">Politica de Confidențialitate</a></div>
+							<div class="copyright-links"><a href="#">Termeni și Condiții</a> / <a href="#">Politica de
+									Confidențialitate</a></div>
 						</div>
 						<div class="col-md-6 text-center text-md-end">
 							<!-- Aici pot merge link-urile către rețelele de socializare -->
@@ -298,7 +504,7 @@
 					</div>
 				</div>
 			</div><!-- #copyrights end -->
-		
+
 		</footer>
 
 	</div><!-- #wrapper end -->
@@ -312,4 +518,5 @@
 	<script src="js/functions.js"></script>
 
 </body>
+
 </html>
